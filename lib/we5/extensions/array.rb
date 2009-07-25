@@ -6,6 +6,10 @@ module We5
         self.join(" ")
       end
 
+      def piped
+        self.join("|")
+      end
+
       def supercompact
         self.flatten.compact
       end
