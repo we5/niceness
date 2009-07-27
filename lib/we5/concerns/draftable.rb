@@ -20,6 +20,8 @@ module We5
     module Draftable
       def self.included(base)
         base.class_eval do
+          include AASM
+
           aasm_column :state
           aasm_initial_state :drafted
 
