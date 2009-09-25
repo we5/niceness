@@ -1,4 +1,5 @@
-Array.send :include, We5::Extensions::Array
+Array.send  :include, We5::Extensions::Array
+String.send :include, We5::Extensions::String
 ActionView::Base.send :include, We5::Helpers::BrowserHelpers
 
 
