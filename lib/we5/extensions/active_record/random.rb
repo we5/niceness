@@ -2,12 +2,11 @@ module We5
   module Extensions
     module ActiveRecord
       module Random
-        
-        class << self
-          extend ClassMethods
+
+        def self.included(klass)
+          klass.extend ClassMethods
         end
-        
-        
+
         class ClassMethods
           def random(count=1)
             ids = connection.select_values("SELECT id FROM #{table_name}");
