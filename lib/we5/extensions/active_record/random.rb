@@ -9,7 +9,7 @@ module We5
 
         module ClassMethods
           def random(count=1)
-            ids = connection.select_values("SELECT id FROM #{table_name}");
+            ids = connection.select_values("SELECT #{table_name}.id FROM #{table_name}");
             random_ids = ::Array.new(count).map do |i|
               ids.delete(ids.rand)
             end
