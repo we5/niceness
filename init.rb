@@ -1,6 +1,8 @@
 Array.send  :include, We5::Extensions::Array
 String.send :include, We5::Extensions::String
-ActionView::Base.send :include, We5::Helpers::BrowserHelpers
+
+ActionView::Base.send   :include, We5::Helpers::BrowserHelpers
+ActiveRecord::Base.send :include, We5::ActiveRecord::Random
 
 
 # You should specify gem dependencies in your config/environment.rb: config.gem "rubyist-aasm"
