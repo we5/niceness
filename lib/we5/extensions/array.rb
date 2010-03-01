@@ -13,6 +13,7 @@ module We5
       def supercompact
         self.flatten.compact
       end
+      
     end
   end
 end
