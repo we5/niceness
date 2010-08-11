@@ -23,6 +23,7 @@ module We5
         when /Firefox\/(\d)\.([1-9])/: "ff#{$1}_#{$2}"
         when /Firefox\/(\d)/: "ff#{$1}"
         when /MSIE (\d)/: "ie#{$1}"
+        when /Chrome/: "chrome"
         end
       end
 
